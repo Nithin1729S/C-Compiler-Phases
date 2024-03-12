@@ -2,4 +2,5 @@
 lex.yy.c
 *.gch
 y.tab.h
-y.yab.c
+y.tab.c
+

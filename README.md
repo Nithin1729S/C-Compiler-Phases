@@ -21,8 +21,81 @@ There is also a lex file to remove comments from a given .c file
 ```bash
 lex commentRemover.l
 cc lex.yy.c
-./a.out < testCases/ifelse.c
+./a.out < TestCases/ifelse.c
 ```
 
 A new file called output.c will be created.
+
+## Syntax Analyzer
+
+In this phase syntax analyzers receive their inputs, in the form of tokens, from lexical analyzers.Checks the expressions from this token are syntactically correct and create a parse tree
+
+### Usage
+
+```bash
+lex parseTree.l
+yacc -d parseTree.y
+cc lex.yy.c y.tab.c
+./a.out < TestCases/forloop.c
+```
+Parse tree will be printed in the terminal with its preorder traversal.
+
+## Semantic Analyzer
+
+In this phase, we extract necessary semantic information from the source code which is impossible to detect in parsing.
+
+### Usage
+
+```bash
+lex scanner.l
+yacc -d parser.y
+cc lex.yy.c y.tab.c
+./a.out < TestCases/forloop.c
+```
+
+Parsing result will be printed in the terminal.
+
+## Intermediate Code Generator
+
+We are trying to generate language independent three-address code for a given source program which is lexically,syntactically and semantically correct.
+
+### Usage
+
+```bash
+lex ICG.l
+yacc -d ICG.y
+cc lex.yy.c y.tab.c
+./a.out < TestCases/forloop.c
+```
+Output will be in ICG.txt file
+
+## Code Optimizer
+
+In this phase,the machine-independent code-optimization phase attempts to improve the intermediate code so that better target code will result. Usually better means
+faster, but other objectives may be desired, such as shorter code, or target code that consumes less power.
+
+
+### Usage
+Paste ICG generated in previous phase in input.txt
+```bash
+python optimizer.py input.txt
+```
+Output will be in optimized_icg.txt
+
+
+## Target Code Generator
+
+The final phase in our compiler model is the code generator. It takes as input the intermediate representation (IR) produced by the front end of the compiler, along with relevant symbol table information, and produces semantically equivalent target programs.
+
+### Usage
+Paste ICG generated in previous phase in icg.txt
+```bash
+python assembly.py icg.txt
+```
+Output will be in icg.s
+
+
+
+
+
 

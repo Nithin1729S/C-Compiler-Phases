@@ -1012,7 +1012,7 @@ int main(){
 
 	printtree(root);
 	
-
+	printf("Preorder Traversal of Parse Tree:\n");
 	preorder(root);
 	
 	printf("%s\n", preBuf);
@@ -1248,7 +1248,7 @@ void printtree(Node* root){
     int h = getmaxlevel(root)-1;
     int i;
 	
-	printf("\n\nAbstract Syntax Tree\n\n");
+	printf("\n\nParse Tree\n\n");
 
 	
     for (i=1; i<=h; i++){

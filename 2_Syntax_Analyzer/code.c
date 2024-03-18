@@ -1,7 +1,4 @@
-// test case to check control and looping statements
-
-#include<stdio.h>
-void main()
+int main()
 {
 	int a=1,b=2,c=10;
 	
@@ -27,5 +24,3 @@ void main()
 	}
 	
 }	
-
-

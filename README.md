@@ -8,7 +8,7 @@ The lexical analyzer is the first phase of the compiler, responsible for convert
 
 ### Usage
 
-To use the lexical analyzer, you can compile the provided code (`lexAnalyzer.c`) using a Lex tool:
+To use the lexical analyzer, you can compile the provided code (`lexAnalyzer.c`) using a Lex tool  ;
 
 ```bash
 lex lexAnalyzer.l

@@ -4,7 +4,7 @@ This repository contains code and resources for various phases of a C compiler. 
 
 ## Lexical Analyzer
 
-The lexical analyzer is the first phase of the compiler, responsible for converting the source code into a sequence of tokens. This phase removes comments, white spaces, and identifies keywords, identifiers, constants, operators, and punctuation symbols.
+The lexical analyzer is the first phase of the compiler, responsible for converting the source code into a sequence of tokens. This phase removes comments, white spaces, and identifies keywords, identifiers, constants, operators, and punctuation symbols
 
 ### Usage
 

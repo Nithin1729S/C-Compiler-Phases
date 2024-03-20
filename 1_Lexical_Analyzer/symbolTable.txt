@@ -2,47 +2,49 @@
  Table:
  		Lexeme			Token				Attribute Value			Line Number
 
-                void                       Keyword                             0                                  2
-                main                     Procedure                             1                                  2
+                 int                       Keyword                             0                                  3
+                main                     Procedure                             1                                  3
                    {                    Punctuator                             2                                  3
-                 int                       Keyword                             3                                  4
-                   a                    Identifier                             4                                  4
-                   =                 Assignment Op                             5                                  4
-                   1              Integer Constant                             6                                  4
-                   ,                    Punctuator                             7                                  4
-                   b                    Identifier                             8                                  4
-                   =                 Assignment Op                             5                                  4
-                   2              Integer Constant                             9                                  4
-                   ,                    Punctuator                             7                                  4
-                   c                    Identifier                            10                                  4
-                   =                 Assignment Op                             5                                  4
-                  10              Integer Constant                            11                                  4
-                   ;                    Punctuator                            12                                  4
-                  if                       Keyword                            13                                  6
-                   (                    Punctuator                            14                                  6
-                   a                    Identifier                             4                                  6
-                   >                 Relational Op                            15                                  6
-                   b                    Identifier                             8                                  6
-                   )                    Punctuator                            16                                  6
-                   {                    Punctuator                             2                                  6
-              printf                    Identifier                            17                                  7
-                   (                    Punctuator                            14                                  7
-       "\nInside if"                String Literal                            18                                  7
-                   )                    Punctuator                            16                                  7
-                   ;                    Punctuator                            12                                  7
-                   }                    Punctuator                            19                                  8
-                else                       Keyword                            20                                  9
-                   {                    Punctuator                             2                                  9
-              printf                    Identifier                            17                                 10
-                   (                    Punctuator                            14                                 10
-     "\nInside else"                String Literal                            21                                 10
-                   )                    Punctuator                            16                                 10
-                   ;                    Punctuator                            12                                 10
-                   }                    Punctuator                            19                                 11
-                   }                    Punctuator                            19                                 13
+                 int                       Keyword                             0                                  5
+                   i                    Identifier                             3                                  5
+                   ,                    Punctuator                             4                                  5
+                   a                    Identifier                             5                                  5
+                   ,                    Punctuator                             4                                  5
+                   b                    Identifier                             6                                  5
+                   ;                    Punctuator                             7                                  5
+                 int                       Keyword                             0                                  6
+                nume                    Identifier                             8                                  6
+                   =                 Assignment Op                             9                                  6
+                3.45                Float Constant                            10                                  6
+                   ;                    Punctuator                             7                                  6
+                 for                       Keyword                            11                                  7
+                   (                    Punctuator                            12                                  7
+                   i                    Identifier                             3                                  7
+                   =                 Assignment Op                             9                                  7
+                   0              Integer Constant                            13                                  7
+                   ;                    Punctuator                             7                                  7
+                   i                    Identifier                             3                                  7
+                   <                 Relational Op                            14                                  7
+                  10              Integer Constant                            15                                  7
+                   ;                    Punctuator                             7                                  7
+                   i                    Identifier                             3                                  7
+                   +                 Arithmetic Op                            16                                  7
+                   +                 Arithmetic Op                            16                                  7
+                   )                    Punctuator                            17                                  7
+                   {                    Punctuator                             2                                  7
+                   a                    Identifier                             5                                  8
+                   =                 Assignment Op                             9                                  8
+                   i                    Identifier                             3                                  8
+                   ;                    Punctuator                             7                                  8
+                   }                    Punctuator                            18                                  9
+                   i                    Identifier                             3                                 10
+                   =                 Assignment Op                             9                                 10
+                   1              Integer Constant                            19                                 10
+                   ;                    Punctuator                             7                                 10
+                   }                    Punctuator                            18                                 11
 
 
 MultiLineComment (0 lines):
 
 SingleLineComment :
-Test case for if else
+ test case to check loop statements

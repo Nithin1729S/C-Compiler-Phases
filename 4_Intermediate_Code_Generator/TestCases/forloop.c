@@ -1,7 +1,7 @@
-#include<iostream>
-using namespace std;
-int main()
-{
+// test case to check loop statements
+
+int main(){
+	
 	int i, a, b;
 	int nume=3.45;	
 	for(i = 0;  i < 10; i++){
@@ -9,6 +9,4 @@ int main()
 	}
 	i=1;
 }
-
-
 

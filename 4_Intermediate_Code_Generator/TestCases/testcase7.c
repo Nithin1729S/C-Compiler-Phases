@@ -1,5 +1,5 @@
-// test case to check loop statements
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 int main(){
 	
 	int i, a, b;
@@ -9,4 +9,3 @@ int main(){
 	}
 	i=1;
 }
-

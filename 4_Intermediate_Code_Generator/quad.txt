@@ -1,10 +1,9 @@
 	Op		Arg1		Arg2		Res
 ------------------------------------------------------------------------
-	=		1		  		a
-	=		2		  		b
-	=		10		  		c
-	>		a		b		t0
-	ifFalse		t0		  		L0
-	goto		  		  		L0
+	=		9		  		v
 	Label		  		  		L0
+	ifFalse		t-1		  		L1
+	+		v		1 		t0
+	=		t0		  		v
+	goto		  		  		L0
 	Label		  		  		L1

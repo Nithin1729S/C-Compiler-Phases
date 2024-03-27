@@ -1,9 +1,10 @@
-// test case to check loop statements
-
-int main(){
+#include<iostream>
+using namespace std;
+int main()
+{
 	
-	int i, a, b;
-	int nume=3.45;	
+	int i=0;
+	int a=0;
 	for(i = 0;  i < 10; i++){
 		a=i;
 	}

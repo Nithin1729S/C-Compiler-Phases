@@ -93,9 +93,3 @@ Paste ICG generated in previous phase in icg.txt
 python assembly.py icg.txt
 ```
 Output will be in icg.s
-
-
-
-
-
-

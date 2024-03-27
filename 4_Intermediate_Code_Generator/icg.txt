@@ -1,8 +1,7 @@
-a = 1
-b = 2
-c = 10
-t0 = a > b
-ifFalse t0 goto L0
-goto L1
+v = 9
 L0:
+ifFalse t-1 goto L1
+t0 = v + 1
+v = t0
+goto L0
 L1:

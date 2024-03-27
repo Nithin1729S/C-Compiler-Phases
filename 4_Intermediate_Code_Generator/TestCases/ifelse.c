@@ -1,3 +1,5 @@
+#include<iostream>
+using namespace std;
 void main()
 {
 	int a=1,b=2,c=10;

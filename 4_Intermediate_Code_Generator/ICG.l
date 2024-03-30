@@ -49,7 +49,7 @@ include		{   return INCLUDE; }
 
 	/* C++ Libraries */
 "math.h"	{    return MATH; }
-"cstdio"	{    return CSTDIO; }
+"stdio.h"	{    return CSTDIO; }
 "iostream"  {	 return IOSTREAM;}
 "conio.h"	{	 return CONIO;}
 "stdlib.h"	{    return STDLIB; }

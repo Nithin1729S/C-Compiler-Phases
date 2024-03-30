@@ -45,8 +45,8 @@ void		{ fprintf(yyout, "%s", yytext);  yylval.ival=3; return(VOID); }
 include		{ fprintf(yyout, "%s", yytext);  return INCLUDE; }
 
 
-	/* C++ Libraries */
-"iostream"	{ fprintf(yyout, "%s", yytext);  return IOSTREAM; }
+	/* C Libraries */
+"stdio.h"	{ fprintf(yyout, "%s", yytext);  return IOSTREAM; }
 
 
 	/* Control Structures */

@@ -1,6 +1,6 @@
+// test case to check loop statements
 
-#include<stdio.h>
-int main(){
+int (){
 	
 	int i, a, b;
 	int nume=3.45;	
